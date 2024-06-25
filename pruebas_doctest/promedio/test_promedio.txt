@@ -1,0 +1,25 @@
+Un alumno desea saber cual sera su calificación final en la materia 
+de Testing. Dicha calificación se compone de tres examenes parciales.
+
+>>> from promedio import promedio
+
+>>> promedio(8, 7, 9)
+8
+
+>>> promedio(-2, 6, 5)
+'Solo calificaciones mayores a cero'
+
+>>> promedio('x', 'y', 9)
+'Solo se aceptan numeros'
+
+>>> promedio(0, 0, 0)
+'Solo calificaciones mayores a cero'
+
+>>> promedio([2,3], 10, 8)
+'Solo se aceptan numeros'
+
+>>> promedio(12, 7, 18)
+'Solo calificaciones menores o iguales a 10'
+
+>>> promedio(None, None, None,)
+'No se aceptan valores nulos'

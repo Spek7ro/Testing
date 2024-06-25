@@ -1,0 +1,48 @@
+Clasifica a las personas según su edad en diferentes categorías.
+
+>>> from edades import clasificar_edad
+
+>>> clasificar_edad(-1)
+'No existes'
+
+>>> clasificar_edad(0)
+'Eres niño'
+
+>>> clasificar_edad(12)
+'Eres niño'
+
+>>> clasificar_edad(13)
+'Eres adolescente'
+
+>>> clasificar_edad(17)
+'Eres adolescente'
+
+>>> clasificar_edad(18)
+'Eres adulto'
+
+>>> clasificar_edad(64)
+'Eres adulto'
+
+>>> clasificar_edad(80)
+'Eres adulto mayor'
+
+>>> clasificar_edad(119)
+'Eres adulto mayor'
+
+>>> clasificar_edad(120)
+'Eres Mumm-Ra'
+
+>>> clasificar_edad(150)
+'Eres Mumm-Ra'
+
+>>> clasificar_edad("X")
+'Solo se aceptan números enteros'
+    
+>>> clasificar_edad(25.5)
+'Solo se aceptan números enteros'
+    
+>>> clasificar_edad(None)
+'Solo se aceptan números enteros'
+
+>>> clasificar_edad([3,6,5])
+'Solo se aceptan números enteros'
